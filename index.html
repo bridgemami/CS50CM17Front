@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Students: Please use this project for the client-side code for Week 17: Final Project. 
+     You will need to replace the contents of this HTML file with your own work, 
+     and create any other files, if any, required for the assignment.
+
+     Since the Final Project requires server-side Node.js JavaScript coding, there is another
+     Repl.it project available for you to complete the server-side portion of the project.
+     When you are done with both projects, be certain to submit in Repl.it and Canvas to be graded. -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CS50C Week 17</title>
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+  </head>
+  <body>
+    <div id="myFinal"></div>
+    <!-- load jquery to use for external json loading -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- load hammer.js to use for touch gesture support: http://hammerjs.github.io/ -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
+	<!-- load React - note when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+	<!-- load babel transpiler to convert React's JSX markup to pure JavaScript
+       Note: we only need babel loaded in the browser if we are not using a build system 
+       where babel would save pure JS files to be loaded by the browser instead -->
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<!-- load our custom script with react component 
+       Note: the type attribute MUST be set here to allow babel to convert JSX in our 
+       script to pure JS! -->
+	<script type="text/babel" src="script.js"></script>
+  </body>
+</html>
