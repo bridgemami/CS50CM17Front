@@ -15,8 +15,8 @@ function FinalList(final) {
     final.list.map(
       (item, index) => (
         <li key={index}>
-        <h3><a href={item.url} alt={item.alt}>{item.title}</a></h3>
-        <a href={item.url}><img src={item.imagepath} /></a><p>
+        <h3><a href={item.url} alt={item.alt} target="_blank">{item.title}</a></h3>
+        <a href={item.url} target="_blank"><img src={item.imagepath} /></a><p>
         {item.description}<br /> {item.date}</p>
         <hr />
         </li>
